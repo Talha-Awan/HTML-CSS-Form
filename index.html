@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+
+  <body>
+    <!-- Title  -->
+    <h1 class="title">Survey Form</h1>
+
+    <!-- Main container -->
+      <div class="container">
+
+        <!-- Form Description -->
+        <div>
+          <div>
+            <p id="description">Let us Know how we can improve BionicWP</p>
+          </div>
+
+          <!-- Form -->
+          <form action="message.html" id="surveyform">
+            
+            <!-- 1st row -->
+            <div class="rowtab">
+              <div class="labeltab">
+                <label>* Name: </label>
+              </div>
+              <div class="inputtab">
+                <input type="text" class="inputstyle" placeholder=" Enter your name" required/>
+              </div>
+            </div>
+
+            <!-- 2nd row -->
+            <div class="rowtab">
+              <div class="labeltab">
+                <label>* Email: </label>
+              </div>
+              <div class="inputtab">
+                <input type="email" class="inputstyle" placeholder=" Enter your email" required />
+              </div>
+            </div>
+
+            <!-- 3rd row -->
+            <div class="rowtab">
+              <div class="labeltab">
+                <label>* Age: </label>
+              </div>
+              <div class="inputtab">
+                <input type="number" name="Age" min="1" max="150" placeholder=" Age" class="inputstyle" required />
+              </div>
+            </div>
+
+            <!-- 4th row -->
+            <div class="rowtab">
+              <div class="labeltab">
+                <label for="">Which option best describes your current role?</label>
+              </div>
+              <div class="selecttab">
+                  <select class="selectstyle">
+                    <option value="Choose" disabled selected>Choose an option</option>
+                    <option value="Student">Student</option>
+                    <option value="Developer">Developer</option>
+                    <option value="Freelancer">Freelancer</option>
+                    <option value="Agent">Agent</option>
+                    <option value="Other">Other</option>
+                  </select>
+              </div>
+            </div>
+
+            <!-- 5th row -->
+            <div class="rowtab">
+                <div class="labeltab">
+                    <label>* How likely is that you would recommend BionicWP?</label>
+                </div>
+                <div class="inputtab">
+                    <input type="radio" name = "radiobuttons" id = "radiobutton-1" value = "1" required>
+                    <label for="">Definitely</label>
+                    <input type="radio" name = "radiobuttons" id = "radiobutton-2" value = "2" required>
+                    <label for="">Maybe</label>
+                    <input type="radio" name = "radiobuttons" id = "radiobutton-3" value  ="3" required>
+                    <label for="">Not sure</label>
+                </div>
+            </div>
+
+            <!-- 6th row -->
+            <div class="rowtab">
+                <div class="labeltab">
+                    <label>What do you like most in BionicWP: </label>
+                </div>
+                <div class="selecttab">
+                    <select class="selectstyle">
+                        <option value = "None" selected disabled>Select an option</option>
+                        <option value="Environment">Environment</option>
+                        <option value="projects">Projects</option>
+                        <option value="community">Community</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- 7th row -->
+            <div class="rowtab">
+                <div class="labeltab">
+                    <label>Things that should be improved in the future</label>
+                </div>
+                <div class="inputtab">
+                    <input type = "checkbox" name = "checkboxes" class="checkboxstyle">Front-end Projects <br>
+                    <input type = "checkbox" name = "checkboxes">Back-end Projects <br>
+                    <input type = "checkbox" name = "checkboxes">Data Visualization <br>
+                    <input type = "checkbox" name = "checkboxes">Challenges <br>
+                    <input type = "checkbox" name = "checkboxes">Open Source Community <br>
+                    <input type = "checkbox" name = "checkboxes">Gitter help rooms <br>
+                    <input type = "checkbox" name = "checkboxes">Videos <br>
+                    <input type = "checkbox" name = "checkboxes">City Meetups <br>
+                    <input type = "checkbox" name = "checkboxes">Wiki <br>
+                    <input type = "checkbox" name = "checkboxes">Forum <br>
+                    <input type = "checkbox" name = "checkboxes">Additional Courses <br>
+                </div>
+            </div>
+
+            <!-- 8th row -->
+            <div class="rowtab">
+                <div class="labeltab">
+                    <label >Any Comments or Suggestions? </label>
+                </div>
+                <div class="inputtab">
+                    <textarea class="textareatyle"></textarea>
+                </div>
+            </div>
+
+            <!-- 9th row -->
+            <div class="rowtab">
+                <div>
+                    <input type="submit" class="buttonstyle" onsubmit="message.html">
+                </div>
+            </div>
+          </form>
+        </div>
+      </div>
+  </body>
+</html>
